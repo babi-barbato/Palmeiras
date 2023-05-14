@@ -1,37 +1,25 @@
-/* 
-animação para fazer aparecer na tela
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  } */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@500&display=swap');
 
 *{margin: 0;padding: 0;font-family: 'Raleway';}
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 /*CSS DO MENU*/
 nav{
-    padding-left: 30px;
-    padding-right: 30px;
     background-color: #1D4F2B;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
+    box-shadow: 0px 5px 10px rgb(255 255 255 / 40%);
+    z-index: 2;
 }
 nav ul{
     display: flex;
@@ -39,38 +27,42 @@ nav ul{
     list-style: none;
     align-items: center;
     gap: 25px;
+    padding: 30px;
 }
 nav a{
+    position: relative;
     color: white;
     text-decoration: none;
 }
-nav a:hover{
-    
+/*Efeito da linha que aparece embaixo das opções no menu*/
+li a:hover::after{/*criei um elemento after (pseudo elemento)*/
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #b1d4bb;
+    animation: bordaMenu forwards .4s; /*Chamo a animação*/
+    width: 100%;
 }
-hr:hover{
-    animation-name: slidein;
-    animation-duration: 3s;
 
-}
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-        text-decoration: line-through;
+@keyframes bordaMenu {
+    from {/*a linha sai do tamanho 0*/
+        width: 0;
     }
-    
-    to {
-        text-decoration: line-through;
-      margin-left: 0%;
+    to {/*e vai para o tamanho de 100%*/
       width: 100%;
     }
-  }
+}
+
 nav button{
     font-size: 25px;
     background-color: #ffffff00;
     padding: 8px;
     border-radius: 10px;
     width: 130px;
+    transition: all 0.5s ease-out;
 }
 nav h1{
     font-size: 30px;
@@ -78,10 +70,13 @@ nav h1{
     margin: 0;
     padding: 0;
 }
+
+/*Botão Cadastro*/
 .btnBranco{
     border: 3px solid white;
 }
 
+/*Botão Login*/
 .btnVerde{
     border: 3px solid #1D4F2B;
     background-color: white;

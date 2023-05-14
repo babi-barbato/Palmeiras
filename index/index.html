@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="../img/palmeirasIcon.ico" type="image/x-icon">
     <title>Home - Palmeiras</title>
 </head>
@@ -15,9 +16,7 @@
             <li><a href="../index/index.html"><h1>Palmeiras</h1></a></li>
         </ul>
         <ul>
-            <li><a href="../historia/historia.html">Histórias</a>
-                <hr style="display:none">
-            </li>
+            <li><a href="../historia/historia.html">Histórias</a></li>
             <li><a href="../times/timeMasc.html">Time Masculino</a></li>
             <li><a href="../times/timeFemi.html">Time Feminino</a></li>
             <li><a href="../quiz/quiz.html">Quizzes</a></li>
@@ -33,5 +32,33 @@
             </button>
         </ul>
     </nav>    
+
+    <div id="divSlideShow">
+        <img id="ft1" src="../img/banner1.png" alt="">
+        <img style="display: none;" id="ft2" src="../img/banner2.png" alt="">
+        <img style="display: none;" id="ft3" src="../img/banner4.png" alt="">
+        <img style="display: none;" id="ft4" src="../img/banner3.png" alt="">
+    </div>
+    <div class="divBtnSlideShow">
+        <button id="button1" onclick="btn1()"></button>
+        <button id="button2" onclick="btn2()"></button>
+        <button id="button3" onclick="btn3()"></button>
+        <button id="button4" onclick="btn4()"></button>
+    </div>
+
+    <div id="divCaixas">
+        <div class="divQuiz">
+            <p>Você realmente conhece o Palmeiras?</p>
+            <button>Clique Já</button>
+            <p>Para realizar diversos quizzes sobre o assunto</p>
+        </div> 
+        <div class="divSobreMim">
+            <p>Por que um site sobre o Palmeiras?</p>
+            <button>Clique Aqui...</button>
+            <p>E descubra mais sobre essa história de amor e ódio</p>
+        </div>
+    </div>
+
 </body>
 </html>
+<script src="index.js"></script>
