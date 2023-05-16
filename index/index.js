@@ -1,3 +1,4 @@
+/*Funções para SlideShow*/
 function btn1(){
     //Mudando cor dos botões
     button1.style.backgroundColor = "#1D4F2B";
@@ -43,4 +44,22 @@ function btn4(){
     ft1.style.display = "none";
     ft2.style.display = "none";
     ft3.style.display = "none";
+}
+
+/*Função para verificar os campos do feeedback*/
+function feedback(){
+    var nome = iptNome.value;
+    var email = iptEmail.value;
+    var comentario = iptComentario.value;
+
+    if(nome == "" || email == "" || comentario == ""){
+        divAlerta.style.visibility = 'visible';
+    }else if(email.indexOf('@' && '.') == -1){
+        alert("Preencha um Email válido");
+    }else{
+        alert('FeedBack enviado com sucesso!');
+        iptEmail.value = "";
+        iptNome.value = "";
+        iptComentario.value = "";
+    }
 }
