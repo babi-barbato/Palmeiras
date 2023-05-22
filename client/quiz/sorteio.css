@@ -14,9 +14,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;  
+    gap: 30px;  
 }
 #divBranco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #15291A;
     width: 20%;
     background-color: white;
     height: 90vh;
@@ -36,7 +40,7 @@
     margin: 0;
     padding: 0;
 }
-h1{
+.divVerde h1{
     font-size: 25px;
     margin: 0;
     padding: 0;
@@ -71,6 +75,7 @@ p a:hover::after{/*criei um elemento after (pseudo elemento)*/
 
 /*Configuração BOTÕES*/
 #divVerde button{
+    transition: all 0.8s;
     width: 35%;
     height: 50px;
     color: #15291A;
@@ -78,4 +83,11 @@ p a:hover::after{/*criei um elemento after (pseudo elemento)*/
     border: 2px solid #15291A;
     border-radius: 5px;
     font-size: 25px;
+}
+#divVerde button:hover{
+    transform: scale(1.1);
+}
+#ftJogador img{
+    width: 250px;
+    height: 240px;
 }
