@@ -83,8 +83,6 @@
         </div>
     </div>
 
-    <div id="divAlerta">Algum campo foi preenchido incorretamente</div>
-
     <div style="width: 100%;display: flex;justify-content: center;background-color: #3D6348">
         <div id="divFeedback">
             <div class="divTitulo">
@@ -106,6 +104,15 @@
             </form>
         </div>
     </div>
+    <div class="banner bannerVermelho">
+        <div class="divMenssagem">Oops! Os campos não foram preenchidos incorretamente!</div>
+        <div class="divFecha" onclick="mensagemFechar('.bannerVermelho')">X</div>
+    </div>
+    <div class="bannerVerde banner">
+        <div class="divMenssagem">FeedBack enviado com sucesso!</div>
+        <div class="divFecha" onclick="mensagemFechar('.bannerVerde')">X</div>
+    </div>
+
 
 </body>
 </html>

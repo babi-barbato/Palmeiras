@@ -53,13 +53,22 @@ function feedback(){
     var comentario = iptComentario.value;
 
     if(nome == "" || email == "" || comentario == ""){
-        divAlerta.style.visibility = 'visible';
+        mensagemAbrir('.bannerVermelho')
     }else if(email.indexOf('@' && '.') == -1){
-        alert("Preencha um Email válido");
+        mensagemAbrir('.bannerVermelho')
     }else{
-        alert('FeedBack enviado com sucesso!');
+        mensagemAbrir('.bannerVerde')
         iptEmail.value = "";
         iptNome.value = "";
         iptComentario.value = "";
     }
+}
+function mensagemAbrir (classEscolha) {
+    var banner = document.querySelector(classEscolha);
+    banner.classList.add("visible");
+}
+
+function mensagemFechar (classEscolha) {
+    var banner = document.querySelector(classEscolha);
+    banner.classList.remove("visible");
 }
