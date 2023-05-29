@@ -48,21 +48,21 @@ function sorteio(){
         divJogador.innerHTML += `
         <h1>VOCÊ É O PIQUEREZ</h1>
         <p><a href="">Clique aqui</a> e descubra mais sobre ele</p>`;
-        ftJogador.innerHTML = `<img src='../img/jogador-veiga.jpg'>`;
+        ftJogador.innerHTML = `<img src='../img/jogador-piquerez.png'>`;
         
     }else if(jogador == 6){
         gifCarrega.style.display = "none";
         divJogador.innerHTML += `
         <h1>VOCÊ É O ZÉ RAFAEL</h1>
         <p><a href="">Clique aqui</a> e descubra mais sobre ele</p>`;
-        ftJogador.innerHTML = `<img src='../img/jogador-veiga.jpg'>`;
+        ftJogador.innerHTML = `<img src='../img/jogador-zeRafael.png'>`;
         
     }else if(jogador == 7){
         gifCarrega.style.display = "none";
         divJogador.innerHTML += `
         <h1>VOCÊ É O RAPHAEL VEIGA</h1>
         <p><a href="">Clique aqui</a> e descubra mais sobre ele</p>`;
-        ftJogador.innerHTML = `<img src='../img/jogador-veiga.jpg'>`;
+        ftJogador.innerHTML = `<img src='../img/jogador-veiga.png'>`;
         
     }
     else if(jogador == 8){
@@ -77,7 +77,7 @@ function sorteio(){
         divJogador.innerHTML += `
         <h1>VOCÊ É O RONY</h1>
         <p><a href="">Clique aqui</a> e descubra mais sobre ele</p>`;
-        ftJogador.innerHTML = `<img src='../img/jogador-veiga.jpg'>`;
+        ftJogador.innerHTML = `<img src='../img/jogador-rony.png'>`;
         
     }else if(jogador == 10){
         gifCarrega.style.display = "none";
