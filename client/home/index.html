@@ -25,10 +25,10 @@
         </ul>
         <ul>
             <button class="btnBranco">
-                <a href="">Cadastro</a>
+                <a href="../cadastro/cadastro.html">Cadastro</a>
             </button>
             <button class="btnVerde">
-                <a href="">Login</a>
+                <a href="../login/login.html">Login</a>
             </button>
         </ul>
     </nav>    
@@ -83,8 +83,8 @@
         </div>
     </div>
 
-    <div style="width: 100%;display: flex;justify-content: center;background-color: #3D6348">
-        <div id="divFeedback">
+    <div style="width: 100%;display: flex;position: relative;justify-content: center;background-color: #3D6348">
+        <div id="divFeedback" style="position: relative;">
             <div class="divTitulo">
                 <h1>FEEDBACK</h1>
                 <p>Venha responder um curto formulário nos contando como foi a experiencia de navegar na nossa página</p>
@@ -103,6 +103,7 @@
                 </div>
             </form>
         </div>
+        <div style="position: absolute;right: 30px;top:30px;background-color: white;border-radius: 50%; width: 30px; height: 30px;text-align: center;cursor: pointer;" id="back-to-top">^</div>
     </div>
     <div class="banner bannerVermelho">
         <div class="divMenssagem">Oops! Os campos não foram preenchidos incorretamente!</div>
@@ -112,7 +113,6 @@
         <div class="divMenssagem">FeedBack enviado com sucesso!</div>
         <div class="divFecha" onclick="mensagemFechar('.bannerVerde')">X</div>
     </div>
-
 
 </body>
 </html>
